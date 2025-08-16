@@ -1,18 +1,53 @@
-# React
+# 🎭 Folkverse – AI-Powered Folk Tale Animator
 
-A modern React-based project utilizing the latest frontend technologies and tools for building responsive web applications.
+---
 
-## 🚀 Features
+## 📖 Overview
 
-- **React 18** - React version with improved rendering and concurrent features
-- **Vite** - Lightning-fast build tool and development server
-- **Redux Toolkit** - State management with simplified Redux setup
-- **TailwindCSS** - Utility-first CSS framework with extensive customization
-- **React Router v6** - Declarative routing for React applications
-- **Data Visualization** - Integrated D3.js and Recharts for powerful data visualization
-- **Form Management** - React Hook Form for efficient form handling
-- **Animation** - Framer Motion for smooth UI animations
-- **Testing** - Jest and React Testing Library setup
+**Folkverse** is a hackathon-ready web platform that transforms **traditional oral or written folk tales** into **beautiful, interactive shadow puppet animations**.
+
+By leveraging **AI-powered narrative generation** and **context-aware visual styling**, it delivers a seamless storytelling journey — from **capturing stories via voice, text, or file upload** to **watching dynamically generated, culturally authentic animations**.
+
+---
+
+## ✨ Features
+
+### 📜 Multi-Modal Story Input
+
+* **Voice Recording** – In-browser audio recorder to capture oral stories
+* **File Upload** – Support for MP3, WAV, and other common audio formats
+* **Text Input** – Simple, dedicated text area for written stories
+
+### 🖋 AI-Simulated Poem Generation
+
+* Converts user-submitted stories into poetic folk-tale narratives
+* Provides **2–3 dynamically generated alternative endings**
+
+### 🖼 Context-Aware Image Generation
+
+* Extracts keywords from stories and fetches high-quality images using the **Unsplash API**
+
+### 🎭 Dynamic Shadow Puppet Animation
+
+* Automatically styles images with CSS filters for a **consistent fire-lit shadow puppet aesthetic**
+* Interactive, auto-playing animation with smooth scene transitions
+
+### 🎮 Interactive Player
+
+* **Controls**: Play / Pause / Next / Previous / Restart / Volume
+* Fully responsive for both **desktop** and **mobile**
+
+---
+
+## 🛠 Tech Stack
+
+* **Frontend**: React 18 + Vite
+* **Styling**: Tailwind CSS with a custom folk-inspired theme
+* **State Management**: React Hooks (`useState`, `useEffect`, `useCallback`)
+* **Routing**: React Router v6
+* **Animations**: CSS Transitions & Keyframe Animations
+
+---
 
 ## 📋 Prerequisites
 
@@ -54,26 +89,6 @@ react_app/
 └── vite.config.js      # Vite configuration
 ```
 
-## 🧩 Adding Routes
-
-To add new routes to the application, update the `Routes.jsx` file:
-
-```jsx
-import { useRoutes } from "react-router-dom";
-import HomePage from "pages/HomePage";
-import AboutPage from "pages/AboutPage";
-
-const ProjectRoutes = () => {
-  let element = useRoutes([
-    { path: "/", element: <HomePage /> },
-    { path: "/about", element: <AboutPage /> },
-    // Add more routes as needed
-  ]);
-
-  return element;
-};
-```
-
 ## 🎨 Styling
 
 This project uses Tailwind CSS for styling. The configuration includes:
@@ -104,4 +119,3 @@ npm run build
 - Powered by React and Vite
 - Styled with Tailwind CSS
 
-Built with ❤️ on Rocket.new
